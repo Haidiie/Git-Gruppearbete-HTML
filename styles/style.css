@@ -1,5 +1,6 @@
 body {
-    background-color: blanchedalmond;
+    background: rgb(0,48,135);
+    background: linear-gradient(90deg, rgba(0,48,135,1) 0%, rgba(0,212,255,1) 53%, rgba(255,255,255,1) 100%);
 }
 
 .wrapper {
@@ -9,10 +10,6 @@ body {
 
  .menuBarLink {
    color: white;
-   font-weight: 300;
-   letter-spacing: 3px;
-   text-decoration: none;
-   background: rgb(238, 13, 13);
    padding: 20px 5px;
    display: inline-block;
    width: 100%;
@@ -24,51 +21,46 @@ body {
 }
 
 .menuBar {
+    background: rgb(0,48,135);
+    background: linear-gradient(90deg, rgba(0,48,135,1) 0%, rgba(0,212,255,1) 53%, rgba(255,255,255,1) 100%);
    max-width: 100%;
    margin: 0 auto;
 }
 
 .navigation ul {
-   border: 1px solid rgb(0, 48, 135);
    list-style: none;
    margin: 0;
    padding: 0;
    display: flex;
 }
 
-.navigation li {
-   flex: 3;    
+.trending-wrapper{
+   background: rgb(0,48,135);
+    background: linear-gradient(90deg, rgba(0,48,135,1) 0%, rgba(0,212,255,1) 53%, rgba(255,255,255,1) 100%);
 }
 
-.navigation .user {
-   flex: 1;
+.trending-wrapper .trending-item{
+    display: inline-block;
+    margin-right: 10px;
+    }
+
+.trending-wrapper .trending-bar{
+    display: flex;
+    overflow: hidden;
+}
+.trending-lead {
+    color: white;
+}
+li a{
+    color: white;
 }
 
-@media all and (max-width: 1000px) {
-   .navigation ul {
-      flex-wrap: wrap;
-   }
-   
-   .navigation li {
-      flex: 1 1 50%;
-   }
-
-   .navigation .user {
-      flex: 1 1 33.33%;
-   }
-}
-
-@media all and (max-width: 480px) {
-   .navigation li {
-      flex-basis: 100%;
-   }
-
-   .navigation .user {
-      flex-basis: 50%;
-   }
-}
 .img-top {
-    width: 100%;
+    width: 50%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    border-radius: 10px;
    
 }
 
@@ -92,6 +84,7 @@ h1 {
     font-size: 35px;
     color: #111;
     line-height: 40px;
+
 }
 
 
@@ -140,4 +133,8 @@ h1 {
 
 .contact{
     margin-left: 5px;
+    color: white;
+}
+address a{
+color:white;
 }
